@@ -1,8 +1,74 @@
+
 .center {
     display: block;
     margin-left: auto;
     margin-right: auto;
     width: 80%;
+}
+
+.dataContentBot{
+    /* min-height: 500px; */
+    float: left;
+    width: 100%;
+}
+
+.titleLeft{
+    float: left;
+    color: black;
+    font-size: 1.2em;
+    padding-top: 4px;
+}
+
+.row{
+    margin-left:0px;
+    margin-right: 0px;
+}
+.newsArea{
+    height: auto;
+    margin-top: 10px;
+    /* border: 2px solid red; */
+    padding: 0px;
+    min-height: 300px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    
+}
+.newsArea:first-child{
+    margin-left:0px;
+}
+.image-news{
+    height: calc( 100% - 100px );
+    background-size: cover;
+    background-position: center;
+}
+.text-news{
+    /* padding:10px; */
+    /* border-top:1px solid red; */
+    color:white;
+    min-height: 50px;
+    height: 60px; overflow: hidden;
+}
+.date_news{
+    color: yellow;
+    position: absolute;
+    bottom: 2px;
+}
+
+
+
+.titleContentBot{
+    background-image: url("/assets/images/menu/news.jpg");
+    background-size: 100% 52px; 
+    color: white;
+    padding: 10px;
+    margin-top:10px;
+    float: left;
+    width: 100%;
+}
+.viewmore{
+    float: right;
+    margin-top:6px;
+    color:#E8CF01;
 }
 
 .ul_area{
@@ -120,6 +186,7 @@ li:hover{
 }
 .content_{
    float: initial;
+   padding-bottom: 80px;
 }
 .text_main{
     padding:20px;
@@ -802,12 +869,7 @@ border: 2px solid #D2AE70;
     background-size: cover;
     background-position: center;
 }
-.text-news{
-    padding:10px;
-    border-top:1px solid #D2AE70;
-    color:white;
-    min-height: 50px;    
-}
+
 
 
 .home_slide .row {
@@ -891,7 +953,7 @@ border: 2px solid #D2AE70;
 }
 .login_area{
     width:100%;
-    margin-bottom: 15px;
+    margin-bottom: 4px;
     float: left;
 }
 
@@ -999,6 +1061,7 @@ border: 2px solid #D2AE70;
     color:white;
     text-align: center;
     margin-left:15px;
+    padding-top: 15px;
 }
 .detailLeft{
 
@@ -1476,7 +1539,7 @@ border: 2px solid #D2AE70;
 
     .sport_img img{
         width: 100%;
-        padding:10px;
+        padding:5px;
         /* padding-right: 5px; */
         margin-left: auto;
         margin-right: unset;
@@ -1489,13 +1552,14 @@ border: 2px solid #D2AE70;
     }
     .casino_img img{
         width: 100%;
-        padding-right: 5px;
+            padding: 5px;
+        /* padding-right: 5px; */
         margin-left: auto;
         margin-right: auto;
      }
      .casino_img2 img{
         width: 100%;
-        padding-right: 5px;
+        /* padding-right: 5px; */
         margin-left: auto;
         margin-right: auto;
      }
@@ -1936,6 +2000,9 @@ border: 2px solid #D2AE70;
    
    
 @media screen and (min-width: 1200px) {
+    .content_{
+        padding-bottom: 0px;
+     }
     .left_area{
         display: block;
         width:680px;
@@ -1943,6 +2010,9 @@ border: 2px solid #D2AE70;
     .right_area{
         display: block;
         width:calc(100% - 680px);
+    }
+    .newsArea{
+        margin-left:15px;
     }
 
     .all_banking img{
@@ -2017,8 +2087,8 @@ border: 2px solid #D2AE70;
     }
     .casino_img img{
         width: 100%;
-        padding-right:0px;
-        padding-left:0px;
+        /* padding-right:0px;
+        padding-left:0px; */
     }
     .casino_img2 {
         /* border-top:3px solid #BD9A23; */

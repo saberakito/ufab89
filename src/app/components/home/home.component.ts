@@ -104,8 +104,8 @@ export class HomeComponent implements OnInit {
   //   // { url: '/assets/images/content/slide3.jpg' }
   // ];
   imageUrls = [
-      // { img: "/assets/images/bg_slide/slide.gif" },  
-    //  { img: "/assets/images/bg_slide/Slide2.jpg" },
+    // { img: "/assets/images/bg_slide/slide1.jpg" },  
+    // { img: "/assets/images/bg_slide/slide2.jpg" },
   ];
   public slideData:slideData[];
   constructor(private todoServcie:TodoService,private router:Router) { }
@@ -130,6 +130,8 @@ export class HomeComponent implements OnInit {
       this.todoList = response;
     });
     
+
+    
     this.todoServcie.getSlide().subscribe((response)=>{
         var arraySlide = [];
         for(var i =0; i<response.length;i++){
@@ -137,7 +139,7 @@ export class HomeComponent implements OnInit {
           //arraySlide.push({ url: '/upload/files/'+response[i].adjust_page_image_name+'.'+response[i].adjust_page_image_type+'?v=1.2' });
         }
         
-     this.imageUrls = arraySlide;
+      this.imageUrls = arraySlide;
     });
   }
   contentLoad(data) {
@@ -251,6 +253,8 @@ interface Todo{
   adjust_page_short_description:string;
   adjust_page_image_name:string;
   adjust_page_image_type:string;
+  adjust_page_create_date:any;
+  adjust_image:any;
 }
 
 interface slideData {
@@ -268,3 +272,4 @@ interface slideData {
   adjust_page_create_date :string;
   adjust_page_update_date :string;
 }
+

@@ -1,8 +1,15 @@
+.content_area_set{
+    padding-bottom: 60px;
+}
+.line_icon_{
+    padding-top:19px;
+}
+
 .content_100{
     height: 100%;
 }
 .social_area{
-    margin-top:50px;
+    margin-top:20px;
     float: right;
     margin-right: 50px;
 }
@@ -103,12 +110,15 @@ div#centerDiv3 {
     background: #171719;
 }
 .header-area{
+    /* margin-left: 10px;
+    margin-right: 10px; */
     background-image: url(/assets/images/content/header.jpg);
     background-size: cover;
     background-position: left center;
-    height: 230px;
+    height: 130px;
     overflow: hidden;
 }
+
 .line_header{
     display: none;
 }
@@ -118,7 +128,8 @@ div#centerDiv3 {
     padding-left: 15px; */
 }
 .logo_area img{
-    width: 294px;
+    padding-top:10px;
+    width: 320px;
     height: auto;
 }
 .pc_style{
@@ -286,6 +297,9 @@ div#centerDiv3 {
      }
 }
 @media screen and (min-width: 768px) {
+    .content_area_set{
+        padding-bottom: 0px;
+    }
     .no-padding{
         /* padding:unset; */
     }

@@ -22,11 +22,12 @@
 }
 .titlePage2{
     margin-top: -40px;
-    color: #363636;
+    color: white;
     font-size: 1.5em;
     position: relative;
     text-align: center;
     font-weight: bolder;
+    z-index: 2;
 }
 .navLink{
     margin-top: 15px;

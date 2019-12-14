@@ -200,7 +200,7 @@ body {
 .banner_hover {-webkit-transition: all .3s ease-in-out 0s;  -o-transition: all .3s ease-in-out 0s; -moz-transition: all .3s ease-in-out 0s; transition: all .3s ease-in-out 0s;}
 
 .qr-popup{
-  background-image: url(/assets/images/icon/qr.png?v=1);
+  background-image: url(/assets/images/icon/qr.png?v=1.1);
   background-size: 100% 100%;
   position: absolute;
   width:267px;

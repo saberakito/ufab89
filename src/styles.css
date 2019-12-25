@@ -3,33 +3,11 @@
  body{
   font-family: "Kanit", "Zawgyi-One", "Tahoma", sans-serif;
 }
-.content_ .container{
-  background-color:#10100E;
-}
-.container{
-  background: rgba(9, 10, 12, 0.77);
-}
-.hover:hover{
-  cursor: pointer;
-}
-
-.content2{
- width: 100%;
-height: 100%;
-}
-.header_bar2 img{
-  display: block;
-  
-  width: 100%;
-  
-}
 .slick-slider {  
   width: 100%;  
   margin: auto;  
   float: left;
-  /* border:#FBF66C 2px solid !important; */
 }  
-
 body {
   width:100%;        
   min-width:320px;
@@ -154,9 +132,17 @@ body {
   display: none;
 }
 
+.stepregister img{
+  width: 100%;
+  margin-bottom: 10px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .login_btn{
-  animation: walk-cyclet2 0.5s steps(6) infinite;
-  -webkit-animation: walk-cyclet2 0.5s steps(6) infinite;
+  animation: walk-cyclet2 0.5s steps(5) infinite;
+  -webkit-animation: walk-cyclet2 0.5s steps(5) infinite;
 }
 .login_btn:hover{
   cursor: pointer;
@@ -200,15 +186,14 @@ body {
 .banner_hover {-webkit-transition: all .3s ease-in-out 0s;  -o-transition: all .3s ease-in-out 0s; -moz-transition: all .3s ease-in-out 0s; transition: all .3s ease-in-out 0s;}
 
 .qr-popup{
-  background-image: url(/assets/images/icon/qr.png?v=1.1);
+  background-image: url(/assets/images/icon/qr.jpg);
   background-size: 100% 100%;
   position: absolute;
-  width:267px;
-  height: 326px;
+  width:250px;
+  height: 250px;
   top:300px;
   right: 30px;
   z-index: 9;
-  display: none;
 }
 
 .register-popup{
@@ -246,16 +231,17 @@ body {
 }
 .container {
   width: 100%;
-  padding-right: 0px;
-  padding-left: 0px;
+  padding-right: 5px;
+  padding-left: 5px;
   margin-right: auto;
   margin-left: auto;
-  /* background-color:#10100E; */
+  background-color:#10100E;
   overflow: hidden;
+  
 }
 .content{
   width: 100%;
-  /* padding-bottom: 30px; */
+  padding-bottom: 30px;
   overflow: hidden;
 }
 .contentPageArea{
@@ -286,27 +272,20 @@ body, html {
 }
 
 .bg-img { 
-  /* The image used */
-  background-image: url(/assets/images/content/bg.jpg);
-  /* background-color: #3D0B0A; */
-  /* Full height */
-  height: 100%; 
-  /* Center and scale the image nicely */
-  
-  background-position: top center;
-  /* background-repeat: no-repeat; */
-  background-size: cover;
-}
-
-
-.bg-img
-{
   background: url(/assets/images/content/bg.jpg?v=1.1) no-repeat center center fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
 }
+/* .bg-img
+{
+  background-image: url(/assets/images/content/bg.jpg);
+  background-size: auto;
+  position: absolute;
+  float: left;
+  overflow-x: hidden;
+} */
 
 .topArea{
   /* background-image: url('/assets/images/header/header.jpg');
@@ -570,19 +549,10 @@ body, html {
     position: relative;
     margin-top: -2px;
 }
-.content_header{
-  
-  /* margin-top:140px; */
-  height: 50px;
-}
 .header_bar img{
   margin-top:10px;
   width: 100%;
   display: none;
-}
-.header_bar2 img{
-  margin-top:10px;
-  width: 100%;
 }
   
   @media screen and (min-width:300px) and (max-width:500px) {
@@ -605,11 +575,11 @@ body, html {
   .topnav a {
     float: left;
     display: block;
-    color: black;
+    color: white;
     text-align: center;
-    padding: 10px 1px;
+    padding: 8px 1px;
     text-decoration: none;
-    font-size: 12px;
+    font-size: 1em;
     /* background: #D10000; */
     width: calc( 100%  );
     font-weight: 100;
@@ -628,9 +598,8 @@ body, html {
    
   
   .topnav a:hover {
-    -webkit-box-shadow:inset 0 0 30px 5px #373737;
-    box-shadow:inset 0 0 30px 5px #373737;
-    color: white;
+    background-color: #ddd;
+    color: black;
   }
   
   
@@ -663,12 +632,6 @@ body, html {
 }
 
 
-@media screen and (min-width: 375px) {
-  .content_header{
-  
-    /* margin-top:100px; */
-  }
-}
 @media screen and (min-width: 425px) {
   .slideshow-container{
     min-height: 200px !important;
@@ -732,7 +695,9 @@ body, html {
   
 
   @media screen and (min-width: 767px) {
-    
+    .container {
+      padding-bottom: 10px;
+    }
     .slideshow-container{
       min-height: 212px !important;
     }
@@ -760,9 +725,7 @@ body, html {
 
   @media screen and (min-width: 768px) {
     .content_header{
-      background-size: 100% 100%;
-      /* margin-top:50px; */
-      height: 50px;
+      background-size: 150% 100%;
     }
     .ibanking img{
         display: block;
@@ -848,13 +811,6 @@ body, html {
   }
   
   @media screen and (min-width: 1000px) {
-    .qr-popup{
-      display: block;
-    }
-    .content_header{
-  
-      margin-top:-2px;
-    }
     .content{
       padding-bottom: 0px;
     }
@@ -875,10 +831,6 @@ body, html {
      }
     .topnav a {
       width: unset;
-      padding-top:8px;
-      text-shadow: 5px 8px 6px #373737;
-      font-size: 1.2em;
-      font-weight: 500;
     }
     .mobile_style{
       display: none;
@@ -942,9 +894,8 @@ body, html {
     }
    
     .topnav a {
-      padding: 12px 4px;
+      padding: 8px 4px;
       height: 50px;
-      padding-top:8px; 
     }
     
     /* .topnav a:first-child{
@@ -1143,10 +1094,8 @@ body, html {
   }
   
   .topnav a {
-    font-size: 1.2em;
+    font-size: 1em;
     font-weight: 100;
-    padding-top:8px;
-    font-weight: 500;
   }
 }
 html, body { height: 100%; }
@@ -1162,12 +1111,10 @@ body { margin: 0;
     width: 100%;
     
   }
-  
   .topnav a {
     padding: 8px  4px;
     height: 50px;
     font-weight: 100;
-    padding-top: 8px;
   }
   .topArea{
     /* border-bottom-left-radius: 40% 90px;

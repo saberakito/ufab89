@@ -11,11 +11,12 @@
     
 }
 .footerArea2{
-    /* background-image: url('/assets/images/footer/footer.png'); */
-    border-top: 4px solid yellow;
+    background-image: url('/assets/images/footer/footer.jpg');
+    /* background: black; */
+    /* border-top:1px solid white; */
     background-repeat: no-repeat;
     background-size: 100% 100%;
-    background-color: black;
+    /* background-color: #0C0C0C; */
     /* border-top:3px solid #F8DD30; */
     display: none;
 }
@@ -99,13 +100,16 @@
     font-weight: 100;
     color: white;
     float: left;
-    padding-left: 25px;
-    padding-right: 25px;
+    padding-left:30px;
+    padding-right: 30px;
     border-right: 1px solid white;
 }
 
 .links_footer:first-child{
-    border-left: 1px solid white;
+    border-left: 0px solid white;
+}
+.links_footer:last-child{
+    border-right: 0px solid white;
 }
 
 
@@ -116,7 +120,7 @@
 .menu_footer_{
     margin: auto;
     width: 90%;
-    padding: 5px;
+    padding: 10px;
     margin-top: 0px;
     float: right;
 }
@@ -417,24 +421,7 @@ li.menuFooter:hover{
     }
     .footerArea2{
         display: block;
-        /* margin-top: 10px; */
-    }
-
-    .social_area_footer{
-        float: left;
-        position: absolute;
-        margin-top: 70px;
-        margin-left: -90px;
-        color: white;
-    }
-    .social_area_footer .line_icon_footer{
-        float: left;
-    }
-    .social_area_footer .line_text_footer{
-        float: left;
-        color: white;
-        font-size: 1.5em;
-        margin-top:25px;
+        margin-top: -12px;
     }
 }
 
@@ -444,21 +431,5 @@ li.menuFooter:hover{
 @media screen and (min-width: 1440px) {
     .space{
         width:280px;
-    }
-    .social_area_footer{
-        float: left;
-        position: absolute;
-        margin-top: 70px;
-        margin-left: -90px;
-        color: white;
-    }
-    .social_area_footer .line_icon_footer{
-        float: left;
-    }
-    .social_area_footer .line_text_footer{
-        float: left;
-        color: white;
-        font-size: 1.5em;
-        margin-top:25px;
     }
 }

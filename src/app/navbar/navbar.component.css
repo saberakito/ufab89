@@ -1,30 +1,31 @@
 .active-menu{
   /* background-color: #ddd; */
-  text-decoration: underline;
+  /*  */
   color: white !important;
-  
+  text-decoration: underline;
 }
 .link_nav{
   float: left;
-  border-left: 1px solid white;
-  
+  border-left: 1px solid #FF5412;
+  margin-top: 10px;
+  margin-bottom: 10px;
   height: 40px;
 }
-.link_nav:first-child{
-  border-left: 0px solid #373737;
-}
 .link_nav:nth-last-child(2){
-  border-right: 0px solid #373737;
+  border-right: 1px solid #FF5412;
 }
 .topnav{
-  /* padding: 10px 10px; */
-  background-image: url(/assets/images/menu/menu.jpg);
-  background-size: 100% 75px;
-  padding-left: 0px;
-  padding-right: 0px;
-  overflow: hidden;
-  color: black;
-  display: none;
+background-image: url("/assets/images/header/menu.jpg");
+/* background-color: #83001F; */
+background-size: 100% 60px;
+padding-left:0px;
+padding-right: 0px;
+color:white;
+display: none;
+/* background: black; */
+/* border-top: 1px solid #FF5412;
+border-bottom: 1px solid #FF5412; */
+/* border-bottom: 3px solid #FBEBBB; */
 }
 .topnav .container{
   overflow: unset;
@@ -32,7 +33,7 @@
 
 .topnav_mobile{
   float: left;
-  padding:10px;
+  padding:5px;
   text-align: center;
   width: 100%;
 }
@@ -44,15 +45,14 @@
   color: white;
   font-size: 14px;
   border-bottom: 3px solid #ccc;
-  /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#ffaa2b+0,ffa927+29,ffa927+29,ffa927+37,ffa927+44,ffd181+100 */
-  background: rgba(61,61,61,1);
-  background: -moz-linear-gradient(left, rgba(61,61,61,1) 0%, rgba(99,99,99,1) 34%, rgba(99,99,99,1) 65%, rgba(61,61,61,1) 100%);
-  background: -webkit-gradient(left top, right top, color-stop(0%, rgba(61,61,61,1)), color-stop(34%, rgba(99,99,99,1)), color-stop(65%, rgba(99,99,99,1)), color-stop(100%, rgba(61,61,61,1)));
-  background: -webkit-linear-gradient(left, rgba(61,61,61,1) 0%, rgba(99,99,99,1) 34%, rgba(99,99,99,1) 65%, rgba(61,61,61,1) 100%);
-  background: -o-linear-gradient(left, rgba(61,61,61,1) 0%, rgba(99,99,99,1) 34%, rgba(99,99,99,1) 65%, rgba(61,61,61,1) 100%);
-  background: -ms-linear-gradient(left, rgba(61,61,61,1) 0%, rgba(99,99,99,1) 34%, rgba(99,99,99,1) 65%, rgba(61,61,61,1) 100%);
-  background: linear-gradient(to right, rgba(61,61,61,1) 0%, rgba(99,99,99,1) 34%, rgba(99,99,99,1) 65%, rgba(61,61,61,1) 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3d3d3d', endColorstr='#3d3d3d', GradientType=1 );
+  background: rgba(255,84,18,1);
+  background: -moz-linear-gradient(left, rgba(255,84,18,1) 0%, rgba(241,111,92,1) 49%, rgba(255,84,18,1) 100%);
+  background: -webkit-gradient(left top, right top, color-stop(0%, rgba(255,84,18,1)), color-stop(49%, rgba(241,111,92,1)), color-stop(100%, rgba(255,84,18,1)));
+  background: -webkit-linear-gradient(left, rgba(255,84,18,1) 0%, rgba(241,111,92,1) 49%, rgba(255,84,18,1) 100%);
+  background: -o-linear-gradient(left, rgba(255,84,18,1) 0%, rgba(241,111,92,1) 49%, rgba(255,84,18,1) 100%);
+  background: -ms-linear-gradient(left, rgba(255,84,18,1) 0%, rgba(241,111,92,1) 49%, rgba(255,84,18,1) 100%);
+  background: linear-gradient(to right, rgba(255,84,18,1) 0%, rgba(241,111,92,1) 49%, rgba(255,84,18,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff5412', endColorstr='#ff5412', GradientType=1 );
 }
 @media screen and (min-width: 1000px) {
   .topnav{
@@ -62,20 +62,14 @@
     display: none;
   }
   .topnav .container{
-    /* width: 960px; */
+    width: 960px;
     /* padding-right: 364px; */
-  }
-}
-@media screen and (min-width: 1024px) {
-  .topnav{
-    /* max-width: 780px; */
-    /* float: right; */
   }
 }
 @media screen and (min-width: 1100px) {
   
   .topnav .container{
-    /* width: 960px; */
+    width: 960px;
     /* padding-right: 364px; */
   }
  
@@ -128,7 +122,7 @@
     width: 90px !important;
   } */
   .topnav .container{
-    /* width: 1140px; */
+    width: 1140px;
     /* padding-right: 364px; */
   }
 }
@@ -186,7 +180,7 @@
     padding-right: 200px; */
   }
   .topnav .container{
-    width: 100%;
+    width: 1140px;
     /* padding-right: 364px; */
   }
 }
@@ -197,7 +191,7 @@
     padding-right: 200px; */
   }
   .topnav .container{
-    width: 100%;
+    width: 1140px;
     /* padding-right: 364px; */
   }
 }
@@ -211,8 +205,8 @@
 
 @media screen and (min-width: 1900px) {
   .topnav{
-    max-width: 100%;
-    float: right;
+    /* padding-left:382px;
+    padding-right: 382px; */
   }
   /* .width_0{
     width: 96px  !important;
@@ -232,7 +226,7 @@
     padding-right: 0px;
   }
   .topnav .container{
-    width:100%;
+    width:1140px;
     /* padding-right: 364px; */
   }
   

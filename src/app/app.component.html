@@ -1,33 +1,15 @@
 <div *ngIf="showHeader"  class="{{class_checkShow}}" >
-    <div  class="container">
         <div  class="header-area">
-            <div  class="logo_area"><img  src="assets/images/logo/logo.png?v=1.1"></div>
-             <div _ngcontent-jev-c0="" class="social_area">
-                <div _ngcontent-jev-c0="" class="line_icon">
-                    <img class="line_icon_" _ngcontent-jev-c0="" alt="" src="assets/images/content/line.png?v=1.1">
-                    <img _ngcontent-jev-c0="" alt="" src="assets/images/content/register.png">
-                </div>
+            <div  class="container">
+                <div  class="logo_area"><img  src="assets/images/logo/logo.png?v=1.1"></div>
+                <!-- <div _ngcontent-jev-c0="" class="social_area">
+                   <div _ngcontent-jev-c0="" class="line_icon">
+                       <img class="line_icon_" _ngcontent-jev-c0="" alt="" src="assets/images/icon/line.png?v=1.1">
+                       <img _ngcontent-jev-c0="" alt="" src="assets/images/icon/register.png">
+                   </div>
+               </div> -->
+               <div _ngcontent-dqp-c0="" class="line_header"><div _ngcontent-dqp-c0="" class="textColorWhite"> ฝากเงิน ถอนเงินได้ตลอด <span _ngcontent-dqp-c0="" class="font_deposit_header">24</span> ชั่วโมง </div><div _ngcontent-dqp-c0="" class="imageBanking"><img _ngcontent-dqp-c0="" alt="" class="icon_line" src="assets/images/icon/line.png" style="padding-top:18px; padding-right: 20px;"><img _ngcontent-dqp-c0="" alt="" class="icon_register" routerlink="/page/register" src="assets/images/icon/register.png" tabindex="0" ng-reflect-router-link="/page/register"></div></div>
             </div>
-           <!-- <div _ngcontent-jev-c0="" class="area_login">
-                <div _ngcontent-jev-c0="" class="area_login_from">
-                    <form _ngcontent-jev-c0="" action="http://ts911go.com/api/loginUfabet.php" autocomplete="off" id="form2" method="post" name="form2" novalidate="" class="ng-untouched ng-pristine ng-valid">
-                        <div _ngcontent-jev-c0="" class="input-group mb-2" style="width: 200px; float: left; margin-right: 5px;">
-                            <div _ngcontent-jev-c0="" class="input-group-prepend">
-                                <div _ngcontent-jev-c0="" class="input-group-text" style="border-radius: 0;"><i _ngcontent-jev-c0="" aria-hidden="true" class="fa fa-user"></i></div>
-                            </div>
-                            <input _ngcontent-jev-c0="" id="ac" name="ac" type="hidden" value="loginUfabet">
-                            <input _ngcontent-jev-c0="" class="form-control" id="inlineFormInputGroup" name="username" placeholder="Username" style="border-radius: 0; border:0px;" type="text">
-                        </div>
-                        <div _ngcontent-jev-c0="" class="input-group mb-2" style="width: 200px;float: left; margin-right: 5px;">
-                            <div _ngcontent-jev-c0="" class="input-group-prepend">
-                                <div _ngcontent-jev-c0="" class="input-group-text" style="border-radius: 0;"><i _ngcontent-jev-c0="" aria-hidden="true" class="fa fa-lock"></i></div>
-                            </div>
-                            <input _ngcontent-jev-c0="" class="form-control" id="inlineFormInputGroup" name="password" placeholder="Password" style="border-radius: 0; border:0px;" type="password">
-                        </div>
-                        <div _ngcontent-jev-c0="" class="btn_login_from" onclick="doPostBackBetufa('btnSignIn','')">login</div>
-                    </form>
-                </div>
-            </div> -->
         </div>
         
         <!-- <div  class="logo_area"><img  src="assets/images/logo/logo.png"></div>
@@ -55,9 +37,7 @@
                 </form>
             </div>
         </div> -->
-        <div  class="area_login"></div>
-        <app-navbar *ngIf="showHeader"></app-navbar>
-    </div>
+    <app-navbar *ngIf="showHeader"></app-navbar>
   <!-- <div class="header">
       <div class="logo"><img src="/assets/img/logo/logo.png" alt=""></div>
       <div class="div_social">
@@ -71,14 +51,15 @@
 
 
 </div>
-<router-outlet></router-outlet>
+<div class="content">
+    <router-outlet></router-outlet>
+</div>
+
 <div class="m_footer col-xs-12">
     <div class="col-xs-3" routerLink="/home"><img src="assets/images/footer/icon-home.png"></div>
-    <div class="col-xs-3" ><a href="http://line.me/ti/p/~@vwin168" target="_bank"><img src="assets/images/footer/icon-line.png"></a></div>
+    <div class="col-xs-3" ><a href="http://line.me/ti/p/~@ufab89" target="_bank"><img src="assets/images/footer/icon-line.png"></a></div>
     <div class="col-xs-3" routerLink="/promotion"><img src="assets/images/footer/icon_guide.png"></div>
     <div class="col-xs-3" routerLink="/page/register" ><img src="assets/images/footer/icon_add.png"></div>
 </div>
-<div  class="container">
     <app-footer *ngIf="showHeader"></app-footer>
-</div>
 

@@ -1,4 +1,5 @@
 <div class="topnav" id="myTopnav">
+        <div class="container">
             <ng-container *ngFor="let menu of menus; index as i; first as isFirst;let l = count">
                     <div class="link_nav cal_{{l+2}}" *ngIf="i==0">
                         <a [routerLinkActive]="['active-menu']"  [routerLinkActiveOptions]="{exact:true}" routerLink="/home" class=" links active ">หน้าแรก</a>
@@ -10,7 +11,7 @@
                         <a  [routerLinkActiveOptions]="{exact:true}" [routerLinkActive]="['active-menu']" routerLink="/promotion" class=" links active ">โปรโมชั่น</a>
                     </div>
             </ng-container>
-            
+        </div>
             <!-- <ng-container *ngIf='login_status_check!="1"'>
                 <div class="link_nav cal_4">
                     <a [routerLinkActive]="['active-menu']"  [routerLinkActiveOptions]="{exact:true}" routerLink="/promotion" class=" links active ">ค่าบริการ</a>
